@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/innlegg_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OVERSKRIFT/TITTEL"
+        android:textAppearance="@android:style/TextAppearance.Material.Headline"/>
+
+    <!-- FORMATERING AV "SKREVET AV" FELTET -->
+    <LinearLayout
+        android:id="@+id/innlegg_misc_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/innlegg_header">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/innlegg_written_on"/>
+
+        <TextView
+            android:id="@+id/innlegg_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3sp"
+            android:text="@string/default_date"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3sp"
+            android:text="@string/innlegg_by"/>
+
+        <TextView
+            android:id="@+id/innlegg_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3sp"
+            android:text="@string/default_name"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/innlegg_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/innlegg_misc_info"
+        android:layout_marginTop="8sp"
+        android:text="Her kommer innleggets text. Dette skal være en liten bolk."
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"/>
+</LinearLayout>

@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Prosjektdagbok</string>
+
+    <!-- TOOLBAR: -->
+    <string name="main_header">6117 Bachelorprosjekt</string>
+    <string name="title_activity_dagbok">dagbok</string>
+    <string name="title_activity_about">Om Prosjektet</string>
+    <string name="title_activity_WriteNew">Skriv nytt innlegg</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- DIARY PAGE: -->
+    <string name="innlegg_by"> av </string>
+    <string name="innlegg_written_on">Skrevet </string>
+    <string name="default_date">dd.mm.yyyy</string>
+    <string name="default_name">Navn Navnesen</string>
+    <string name="dummy_dagbok_data">
+    [{\"id\":\"38\",\"title\":\"Grafikk korreksjon\",\"owner\":\"1\",\"date\":\"2017-02-08\",\"content\":\"I dag har vi rettet opp i litt bugs i det grafiske. Vi har også forsøkt å implementere et overgangs system for å plassere ut overganger fra et miljø til et annet.\",\"links\":\"\"},{\"id\":\"37\",\"title\":\"Milepæl 1\",\"owner\":\"2\",\"date\":\"2017-02-07\",\"content\":\"I dag er det full jobbing med presentasjon av første milepæl! Den skal hovedsakelig snakke om hvordan det ligger an med planleggingsfasen, selv om gruppa vår allerede er godt igang med selve utviklingen. Med selve utviklingen er vi godt på vei med prosedyremessig kartgenerering. Sprites og art assets er også på vei ut. 🙏\",\"links\":\"\"},{\"id\":\"36\",\"title\":\"A* og VORONOI\",\"owner\":\"1\",\"date\":\"2017-01-24\",\"content\":\"I dag har vi brukt tiden vår på å implementere algoritmene \\"A-Star\\" og \\"Voronoi. \\"A-Star\\" er en algoritme som skal levere raskeste vei fra et punkt i en 2-dimensjonal tabell, til et annet punkt i samme tabell. Dette er gjort av Håkon og Håvard. Magnus og Ruben har jobbet med Voronois fortune's algorithm. Denne er brukt til å lage en gjevn inndeling av en 2-dimensjonal tabell for en gitt liste med punkter. Disse algoritmene ble implementert i dag. Hele teamet er veldig motiverte nå!\",\"links\":\"\"},{\"id\":\"4\",\"title\":\"Ferdigsillt prosjektdagbok\",\"owner\":\"1\",\"date\":\"2017-01-23\",\"content\":\"Endelig er prosjektdagboken ferdigstillt. Med dette og godkjent prosjektskisse, er vi klare for å begynne med prosjektbeskrivelsen. Ved siden av dette jobber vi hardt med å implementere \\"overworld\\" i spillet vårt.\",\"links\":\"\"},{\"id\":\"3\",\"title\":\"Kunst og kart\",\"owner\":\"1\",\"date\":\"2017-01-17\",\"content\":\"I dag begynte vi dagen med vår daglige morgenmøte. Vi snakket om Reddit posten vi publiserte sent fredagskveld. Denne hadde fått ganske mye oppmerksomhet, noe som er utrolig kult! Det er bra at det fortsatt er interesse for denne typen spill. Vi fortsatte så med å ha en videokonferanse med våres \\"art director\\", Benjamin. Her fikk vi gått igjennom litt detaljer om prosjektet og delt noe meninger imellom. Vi fikk også snakket ut hvordan vi ser for oss kunsten i spillet. Resten av dagen har gått til å lære mer unity3D. Vi gikk igjennom den offentlige tutorialen \\"precidural cave generation\\" som omhandler hvordan man bruker teknikker for bildebehandling for å lage områder i en to-dimensjonal matrise.\",\"links\":\"\"}]
+    </string>
+
+    <!-- NETWORK MESSAGES: -->
+    <string name="no_connection_header">NO CONNECTION!</string>
+    <string name="no_connection_date">Just now</string>
+    <string name="no_connection_owner">System Administrator</string>
+    <string name="no_connection_content">Sorry! We did not get any data from the server. Something went wrong.</string>
+
+    <!-- ABOUT PAGE: -->
+    <string name="prosjektskisse_content">
+        Oppdraget vårt er å lage et spill inspirert av Heroes of Might and Magic 3 fra 1999.
+        Hele gruppen er fans av dette og det er der motivasjonen kommer fra. Spillet er altså
+        da et 2-dimensjonelt strategispill med store rollespill komponenter. Vi vet alt at
+        det finnes et marked for dette, da det fortsatt er aktive forumer som diskuterer spillet.
+        Det er også fortsatt innhold som blir laget til Heroes 3.
+
+        \n\nVi skal bruke arbeidsmetodikken Scrum fullt ut, med daglige scrum-møter 2-ukers sprinter.
+        Våre faste arbeidsdager for prosjektet er tirsdag, onsdag og fredag. Dette skal utføres
+        til prosjektet er fullført. Vi har kapret oss bakre del av prosjektlabratoriumet som
+        vårt kontor. Scrum sammen med kanban er etter vår mening en god måte å planlegge.
+
+        \n\nSpillet er en rundebasert strategispill i en fantasiverden. Spilleren kontroller
+        helter og enheter og har kontroll over byer.
+
+        \n\nSpillet skal være tilgjengelig for både datamaskin og mobile enheter. Av de mobile
+        enhetene fokuserer vi hovedsakelig på nettbrett med store skjermstørrelser. Spillet
+        skal være spesialtilpasset til enhetene, slik at kontroller og brukergrensesnitt passer
+        til berøringsgrensesnitt. Selve utviklingen av spillet skal foregå i utviklingsverktøyet
+        Unity3D der vi skal bruke programmeringsspråket C#. Vi får hjelp av en illustratør ved
+        navn Benjamin Brinckmann til å ta for seg det visuelle i spillet.
+
+        \n\nVi ønsker å ha en spillbar prototype innen innleveringsfristen.
+        Denne trenger ikke nødvendigvis å inneholde ferdig grafikk, ha et balansert
+        kamp system eller være feilfri. Som effektmål skal vi lære oss utviklingsmetode
+        og -prinsipp gjennom utførelsen av prosjektet og bruk av Unity for spillprogrammering.
+    </string>
+
+    <!-- WRITE NEW PAGE-->
+    <string-array name="users">
+        <item id="1">Magnus Poppe Wang</item>
+        <item id="2">Ruben Bratsberg</item>
+        <item id="3">Håvard</item>
+        <item id="4">Håkon Mølstre</item>
+    </string-array>
+
+</resources>
