@@ -95,6 +95,11 @@ public class MainActivity extends AppCompatActivity implements APIUrls
         });
     }
 
+    /**
+     * Packs a Object of the class DagbokInnlegg into a bundle
+     * @param innlegg
+     * @return packed bundle.
+     */
     private Bundle packDagbokInnlegg( DagbokInnlegg innlegg )
     {
         Bundle dagbokInnlegg = new Bundle();
