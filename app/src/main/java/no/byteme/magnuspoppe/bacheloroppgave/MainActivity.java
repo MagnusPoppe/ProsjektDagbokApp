@@ -89,26 +89,10 @@ public class MainActivity extends AppCompatActivity implements APIUrls
             {
                 DagbokInnlegg innlegg = data.get(position);
                 Intent intent = new Intent(getApplicationContext(), WriteNew.class);
-                intent.putExtra(INNLEGG_TAG, packDagbokInnlegg(innlegg));
+                intent.putExtra(INNLEGG_TAG, innlegg.toBundle());
                 startActivity(intent);
             }
         });
-    }
-
-    /**
-     * Packs a Object of the class DagbokInnlegg into a bundle
-     * @param innlegg
-     * @return packed bundle.
-     */
-    private Bundle packDagbokInnlegg( DagbokInnlegg innlegg )
-    {
-        Bundle dagbokInnlegg = new Bundle();
-        dagbokInnlegg.putInt(INNLEGG_ID, innlegg.getId());
-        dagbokInnlegg.putString(INNLEGG_DATE, innlegg.getDate());
-        dagbokInnlegg.putString(INNLEGG_OWNER, innlegg.getAuthor());
-        dagbokInnlegg.putString(INNLEGG_TITLE, innlegg.getTitle());
-        dagbokInnlegg.putString(INNLEGG_CONTENT, innlegg.getContent());
-        return dagbokInnlegg;
     }
 
     /**
@@ -137,7 +121,8 @@ public class MainActivity extends AppCompatActivity implements APIUrls
      */
     private void openAboutPage()
     {
-        startActivity(new Intent(getApplicationContext(), About.class));
+        //startActivity(new Intent(getApplicationContext(), About.class));
+        startActivity(new Intent(getApplicationContext(), AboutNew.class));
     }
 
     /**

@@ -1,10 +1,11 @@
 package no.byteme.magnuspoppe.bacheloroppgave;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-
-import org.json.JSONException;
-import org.json.JSONObject;
+import android.os.Bundle;
+import static no.byteme.magnuspoppe.bacheloroppgave.MainActivity.INNLEGG_CONTENT;
+import static no.byteme.magnuspoppe.bacheloroppgave.MainActivity.INNLEGG_DATE;
+import static no.byteme.magnuspoppe.bacheloroppgave.MainActivity.INNLEGG_ID;
+import static no.byteme.magnuspoppe.bacheloroppgave.MainActivity.INNLEGG_OWNER;
+import static no.byteme.magnuspoppe.bacheloroppgave.MainActivity.INNLEGG_TITLE;
 
 /**
  * Created by MagnusPoppe on 04/02/2017.
@@ -68,6 +69,35 @@ public class DagbokInnlegg
         this.content    = content;
         this.date       = date;
         this.formattedDate = formatDate(date);
+    }
+
+    /**
+     * Unpacks a bundle to construct the object.
+     * @param bundle
+     * @return a formatted dagbokinnlegg.
+     */
+    public DagbokInnlegg(Bundle bundle)
+    {
+        this.id         = bundle.getInt(MainActivity.INNLEGG_ID);
+        this.title      = bundle.getString(MainActivity.INNLEGG_TITLE);
+        this.date       = bundle.getString(MainActivity.INNLEGG_DATE);
+        this.author     = bundle.getString(MainActivity.INNLEGG_OWNER);
+        this.content    = bundle.getString(MainActivity.INNLEGG_CONTENT);
+    }
+
+    /**
+     * Packs a Object of the class DagbokInnlegg into a bundle
+     * @return packed bundle.
+     */
+    public Bundle toBundle()
+    {
+        Bundle dagbokInnlegg = new Bundle();
+        dagbokInnlegg.putInt(INNLEGG_ID, getId());
+        dagbokInnlegg.putString(INNLEGG_DATE, getDate());
+        dagbokInnlegg.putString(INNLEGG_OWNER, getAuthor());
+        dagbokInnlegg.putString(INNLEGG_TITLE, getTitle());
+        dagbokInnlegg.putString(INNLEGG_CONTENT, getContent());
+        return dagbokInnlegg;
     }
 
     /**

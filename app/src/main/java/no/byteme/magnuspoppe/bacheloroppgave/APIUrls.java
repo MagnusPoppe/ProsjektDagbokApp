@@ -6,8 +6,9 @@ package no.byteme.magnuspoppe.bacheloroppgave;
 
 public interface APIUrls
 {
-    // BASE URL
+    // BASE URL:
     String BYTEME_API   = "http://byteme.no/api/";
+    String BYTEME_DOCUMENTS = "http://byteme.no/document/";
 
     // DIFFERENT HTTP REQUESTS:
     String DIARY_GET    = "diary/get.php";  // GET POSTS

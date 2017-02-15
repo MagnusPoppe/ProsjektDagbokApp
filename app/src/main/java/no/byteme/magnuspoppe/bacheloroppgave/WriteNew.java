@@ -70,7 +70,7 @@ public class WriteNew extends Activity implements APIUrls
         if (intent.hasExtra(MainActivity.INNLEGG_TAG))
         {
             editMode = true;
-            innlegg = unpackDagbokInnlegg(intent.getBundleExtra(MainActivity.INNLEGG_TAG));
+            innlegg = new DagbokInnlegg(intent.getBundleExtra(MainActivity.INNLEGG_TAG));
             headline.setText(innlegg.getTitle());
             content.setText(innlegg.getContent());
         }
@@ -85,22 +85,6 @@ public class WriteNew extends Activity implements APIUrls
     protected void onResume()
     {
         super.onResume();
-    }
-
-    /**
-     * Unpacks a bundle to a spesific format.
-     * @param bundle
-     * @return a formatted dagbokinnlegg.
-     */
-    private DagbokInnlegg unpackDagbokInnlegg(Bundle bundle)
-    {
-        return new DagbokInnlegg(
-                bundle.getInt(MainActivity.INNLEGG_ID),
-                bundle.getString(MainActivity.INNLEGG_TITLE),
-                bundle.getString(MainActivity.INNLEGG_DATE),
-                bundle.getString(MainActivity.INNLEGG_OWNER),
-                bundle.getString(MainActivity.INNLEGG_CONTENT)
-        );
     }
 
     /**
